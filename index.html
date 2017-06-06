@@ -6,7 +6,7 @@
   </head>
   <body>
     <!-- fixed position header for page /-->
-    <header>
+    <header class="flex container">
       <div class="logo">
         <img src="./resources/images/tea-cozy-logo.png">
       </div>
@@ -28,13 +28,12 @@
     </header>
 
 <!-- Content container for the three sub sections /-->
-    <div class=content>
+    <div class="content">
 
 <!--start mission div /-->
-      <div class="mission" id="mission">
-        <div class="image-content"></div>
+      <div class="flex-container" id="mission">
 
-        <div class="our mission">
+        <div class="our-mission">
 
           <h2>Our Mission</h2>
           <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
@@ -45,63 +44,78 @@
 <!-- end mission div /-->
 
 <!-- start tea div /-->
-      <div class="tea" id="tea"><!-- tea div will have 5 image with text containers that wrap /-->
+      <div id="tea"><!-- tea div will have 5 image with text containers that wrap /-->
 
         <h2>Tea of the Month</h2>
         <h4>What's Steeping at the Tea Cozy?</h4>
 
-        <div class"fall berry">
-          <img src="./resources/images/berryblitz.jpg">
-          <h4>Fall Berry Blitz Tea</h4>
-        </div>
+        <div class="flex-container tea">
 
-        <div class"spiced rum">
-          <img src="./resources/images/spiced-rum.jpg">
-          <h4>Spiced Rum Tea</h4>
-        </div>
+          <div class="item">
+            <img src="./resources/images/berryblitz.jpg">
+            <span>Fall Berry Blitz Tea</span>
+          </div>
 
-        <div class"seasonal donuts">
-          <img src="./resources/images/donuts.jpg">
-          <h4>Seasonal Donuts</h4>
-        </div>
+          <div class="item">
+            <img src="./resources/images/spiced-rum.jpg">
+            <span>Spiced Rum Tea</span>
+          </div>
 
-        <div class"myrtle ave">
-          <img src="./resources/images/myrtle-ave.jpg">
-          <h4>Myrtle Ave Tea</h4>
-        </div>
+          <div class="item">
+            <img src="./resources/images/donuts.jpg">
+            <span>Seasonal Donuts</span>
+          </div>
 
-        <div class"bedford bizarre">
-          <img src="./resources/images/bedford-bizzarre.jpg">
-          <h4>Bedford Bizarre Tea</h4>
+          <div class="item">
+            <img src="./resources/images/myrtle-ave.jpg">
+            <span>Myrtle Ave Tea</span>
+          </div>
+
+          <div class="item">
+            <img src="./resources/images/bedford-bizzarre.jpg">
+            <span>Bedford Bizarre Tea</span>
+          </div>
+
         </div>
 
       </div>
 <!-- end tea div /-->
 
 <!-- start locations div /-->
-      <div class="locations" id="locations"><!-- locations div has a background-image and three flex boxes centered with space around /-->
-
-        <div class="image-content"></div>
+      <div class="flex-container" id="locations"><!-- locations div has a background-image and three flex boxes centered with space around /-->
 
         <h2>Locations</h2>
 
-        <div class"bedford bizarre">
-          <h3>Downtown</h3>
-        </div>
+        <div class="flex container locations"
 
-        <div class"bedford bizarre">
-          <h3>East Bayside</h3>
-        </div>
+          <div id="store">
+            <h3>Downtown</h3>
+            <h4>384 West 4th St</h4>
+            <h4>Suite 106</h4>
+            <h4>Portland, Maine</h4>
+          </div>
 
-        <div class"bedford bizarre">
-          <h3>Oakdale</h3>
+          <div id="store">
+            <h3>East Bayside</h3>
+            <h4>3433 Phisherman's Avenue</h4>
+            <h4>(northwest Corner)</h4>
+            <h4>Portland Maine</h4>
+          </div>
+
+          <div id="store">
+            <h3>Oakdale</h3>
+            <h4>515 Crescent Avenue</h4>
+            <h4> Second Floor</h4>
+            <h4>Portland Maine</h4>
+          </div>
+
         </div>
 
       </div>
 <!-- end locations div /-->
 
 <!-- start contact div /-->
-       <div class="contact" id="contact"><!--contact div has centered contact information content /-->
+       <div class="flex-container" id="contact"><!--contact div has centered contact information content /-->
 
            <h2>The Tea Cozy</h2>
 
@@ -116,7 +130,7 @@
 
 
     <!-- footer/-->
-    <footer><!-- footer container has a bottom left corner copyright /-->
+    <footer id="footer"><!-- footer container has a bottom left corner copyright /-->
 
       <h5>Copyright The Tea Cozy 2017</h5>
 
